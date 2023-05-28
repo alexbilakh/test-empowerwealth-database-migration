@@ -1,5 +1,16 @@
 # EMPOWERWEALTH TEST - NOSQL TO SQL DATABASE MIGRATION
 
+## Structure Instruction
+
+1. Q1-CreateTable-Statement.sql
+   Answer of the first question to write a set of CREATE TABLE statement(s).
+
+2. Q2-Insert.ts
+   Answer of the second question to write a implementation of insert(object) using TypeScript.
+
+3. Q2-Update.ts
+   Answer of the second question to write a implementation of update(\_id, path, newValue) using TypeScript.
+
 ## Overview
 
 Within a document/object database, modifications are performed on a document by utilizing following operations:
@@ -150,9 +161,10 @@ const update = async (
 ```
 
 Keeping the same interfaces for insert and update, we would like to replace the implementation of the insert and update to store and update a ClientSchema object an SQL database (see attached SampleOperations.ts).
-Q1. Write a set of CREATE TABLE statement(s) capable of storing the ClientSchema listed above within an SQL database.
-Q2. Using typescript, write an implementation for insert(object) that takes an insert operation on an object representable by ClientSchema and store it in an SQL database within the table you defined in Q1.
-Q3. Using typescript, write an implementation for update(\_id, path, newValue) that translates the update operation into a set of SQL operations and applies them to the your representation of an object of type ClientSchema that has been stored in an SQL database using the tables you defined in Q1.
+
+- Q1. Write a set of CREATE TABLE statement(s) capable of storing the ClientSchema listed above within an SQL database.
+- Q2. Using typescript, write an implementation for insert(object) that takes an insert operation on an object representable by ClientSchema and store it in an SQL database within the table you defined in Q1.
+- Q3. Using typescript, write an implementation for update(\_id, path, newValue) that translates the update operation into a set of SQL operations and applies them to the your representation of an object of type ClientSchema that has been stored in an SQL database using the tables you defined in Q1.
 
 ### Additional Note
 
